@@ -143,15 +143,15 @@ function get_role_and_home(object) {
 function check_phoneType(object) {
   object_phone_type = object.phoneType
   if (object_phone_type == "iOS") {
-    phone_type = "/media/apple_logo.png"
+    phone_type = "media/apple_logo.png"
   }
 
   else if (object_phone_type == "Android") {
-    phone_type = "/media/android_logo.png"
+    phone_type = "media/android_logo.png"
   }
 
   else {
-    phone_type = "/media/other_phone_logo.png"
+    phone_type = "media/other_phone_logo.png"
   }
   
 }
