@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DALI LAB Project</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+
+<body>
+
+  <button id="tutBtn">
+    <p style="margin-right: 10px;
+">Need a Tutorial? </p>
+    <img src="/media/info.gif" style = "width:25px; height: auto;">
+    </button>
+
+<!-- The Modal -->
+  <div id="tutmodal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <img src="/media/Annotated.png" style="width: 100%; height: auto; border-radius: 20px">
+          <span class="close">&times;</span>
+        </div>
+      </div>
+
+</div>
+  
+  <div class="title-container">
+    <h1 style="margin-top: 30px;"> The DALI Lab Starter Deck</h1>
+    <p>a fictitious card game social media service</p>
+  </div>
+
+  <button type="button" id="reload_button" onClick="window.location.reload()">
+    <p>Open a New Card Pack </p>
+    <img src="/media/renew.gif" style = "width:25px; height: auto;">
+  </button>
+
+  <div class="card-flex-container">
+    
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card0_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card0_mm"> 07 </h3>
+              <h3 id = "card0_dd"> 01 </h3>
+              <h3 id = "card0_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card0_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card0_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card0_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card0_name">Ijemma Onwuzulike</h2>
+              <p id = "card0_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card0_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card0_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card0_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card0_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card0_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card0_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card0_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card0_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card0_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card0_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card0_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card0_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card0_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card1_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card1_mm"> 07 </h3>
+              <h3 id = "card1_dd"> 01 </h3>
+              <h3 id = "card1_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card1_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card1_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card1_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card1_name">Ijemma Onwuzulike</h2>
+              <p id = "card1_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card1_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card1_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card1_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card1_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card1_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card1_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card1_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card1_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card1_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card1_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card1_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card1_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card1_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card2_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card2_mm"> 07 </h3>
+              <h3 id = "card2_dd"> 01 </h3>
+              <h3 id = "card2_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card2_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card2_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card2_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card2_name">Ijemma Onwuzulike</h2>
+              <p id = "card2_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card2_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card2_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card2_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card2_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card2_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card2_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card2_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card2_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card2_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card2_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card2_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card2_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card2_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card3_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card3_mm"> 07 </h3>
+              <h3 id = "card3_dd"> 01 </h3>
+              <h3 id = "card3_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card3_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card3_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card3_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card3_name">Ijemma Onwuzulike</h2>
+              <p id = "card3_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card3_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card3_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card3_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card3_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card3_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card3_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card3_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card3_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card3_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card3_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card3_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card3_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card3_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card4_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card4_mm"> 07 </h3>
+              <h3 id = "card4_dd"> 01 </h3>
+              <h3 id = "card4_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card4_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card4_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card4_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card4_name">Ijemma Onwuzulike</h2>
+              <p id = "card4_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card4_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card4_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card4_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card4_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card4_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card4_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card4_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card4_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card4_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card4_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card4_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card4_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card4_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card5_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card5_mm"> 07 </h3>
+              <h3 id = "card5_dd"> 01 </h3>
+              <h3 id = "card5_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card5_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card5_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card5_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card5_name">Ijemma Onwuzulike</h2>
+              <p id = "card5_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card5_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card5_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card5_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card5_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card5_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card5_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card5_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card5_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card5_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card5_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card5_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card5_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card5_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="card" data-tilt data-tilt-reverse="false" data-tilt-reset="true">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          
+<!--           Phone Logo at the top left -->
+          <div id = "phone_type_container">
+            <img class = "phone_type" id="card6_phonetypeimg" src="/media/apple_logo.png"> 
+          </div>
+          
+<!--             Dali Lab Logo at the corner -->
+            <img src="//images.squarespace-cdn.com/content/v1/551cbdc5e4b0cd11d2597487/1446928884357-B0KSE9C4NADRQ46V9P9F/DALI_whiteLogo.png?format=1500w" id = "dali-logo-img">
+
+<!--           Birthday numbers -->
+            <div class="birthday-numbers">
+              <h3 id = "card6_mm"> 07 </h3>
+              <h3 id = "card6_dd"> 01 </h3>
+              <h3 id = "card6_yy"> 04 </h3>
+<!--               fav color  -->
+              <h4 class = "fav-color" id = "card6_favcol" style="background: lightblue; color: lightblue;">cl</h4>
+            </div>
+
+          
+          <div class = "phone-type-container">
+            <h1 class = "year" id = "card6_year">26</h1>
+            <div class="center-front-face">
+              <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2139&q=80" class = "profile_photo" id="card6_pfp">
+              <h2 style = "font-size:1.7em; font-weight: lighter;margin-top: 10%" id = "card6_name">Ijemma Onwuzulike</h2>
+              <p id = "card6_role_home" style = "font-size:.87em">Designer | Oakland, CA</p>
+              <p id = "card6_major" style= "margin-top: 1%; margin-bottom: 2%; font-size:.75em">Computer Science</p>
+              <hr width="90%" margin-top: 2%; border-color: white>
+              <p id = "card6_quote"class = "card_quote_desc_front"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            </div>
+        </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <div class="background-back-card-container">
+                <img src="https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/news/images/dali_lab_lounge_810.jpg?h=de8c8e61&itok=x0Wrs9am" style = "filter: blur(1px);" alt="" class="pp" />
+                <div class="background-top-left">
+                  <h1 class ="year-reversed" id = "card6_year_reversed">26</h1>
+                </div>
+                <div class="background-bottom-right">
+                  <img src="/media/apple_logo.png" id = "card6_phonetypeimg_back" style="height:auto; width: 14%; opacity: 0.53;"> 
+                  <p id = "card6_race_gender">Asian, Male</p>
+                  <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: lighter;" id = "card6_role_home_back">Designer | Oakland, CA & Seoul, South Korea</p>
+                </div>
+              </div>
+              <div style = "font-size: .6em;">
+                <hr style = "margin-top: 1.5%; width: 90%; margin-left: auto; margin-right: auto;">
+                <div class="interests_container">
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Swiftness Scale: </p>
+                    <p id = "card6_swiftness">Nike MAG Back To the Future Edition</p>
+                  </div>
+                  <div class = "interests_folder">
+                    <p style="margin-right: .3em;">Amplifier Type: </p>
+                    <p id = "card6_amplifier">Tyler Potts</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+  
+            <p class="back_card_desc" id = "card6_quote_back"> " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+            <div style = "font-size: .7em">
+  
+              <div class="major_container">
+                <div class="folder_majors">
+                  <img src="/media/bolt.gif" style = "width:25px; height: auto;">
+                	<p>Power</p>
+                	<p class="power_font" id = "card6_power">Computer Science</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/crank.gif" style = "width:25px; height: auto;">
+                	<p>Skill</p>
+                	<p class="power_font" id = "card6_skill">Digital Art</p>
+                </div>
+                <div class="folder_majors">
+                  <img src="/media/pizza.gif" style = "width:25px; height: auto;">
+                	<p>Buffer</p>
+                	<p class="power_font" id = "card6_buffer">Psychology</p>
+                </div>
+              </div>
+              <div style="display:flex;font-size: .5em;justify-content: space-evenly; margin-top: 2%;">
+                <p>Jaden Halevi, 26</p>
+                <p>Dartmouth HQ, Product of DALI LAB 2023</p>
+                <p id = "card6_footer">01/69</p>
+              </div>
+              
+  
+    
+            </div>
+  
+            <div class="card__body">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    
+  </div>
+
+  <h1 style="margin-top: 100px; visibility: hidden">Test</h1>
+  <script src="/vanilla-tilt.js"></script>
+  <script src="/script.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+</body>
+
+</html>

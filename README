@@ -1,0 +1,13 @@
+From the JSON File recieved of the profiles
+
+1. The code is used in JavaScript where I have name specific functions that is meant to clean and use the data. Established is Vanillatilt.js which is responsible for the 3d camera tilt. When the card is clicked the effect of the turn is shown and uses perspective to make the effect more convinving
+
+There is then an event listener looking for when the user clicks on the new card pack button that uses a random number generator and gives you a brand new set of cards of DALI members.
+
+2. I designed templates in the HTML with placeholder and fallbacks so in case anything doesnt load, there is a backup for all the values. all the templates have tailored specific IDs meant for the JS functions. 
+
+3. The JavaScript looks for these functions, and replaces the text with innerHTML of the randomized profile JSONs data.
+
+4. If the user clicks on the tutorial, a modal pops up to showcase where each information is strategically placed
+
+I first made a protype to test out the profiles and how they would display on the page. Afterwards I designed the concept in FIGMA to get a general idea before I jumped in. Then came the process of replicating it in HTMl/CSS which was a really long and took a week, but once I finished the JS was pretty straightforward in cleaning and implementing data which took 1 day. Overall the project took a week and half, and I am pretty proud of the outcome :)
